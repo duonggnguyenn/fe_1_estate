@@ -1,0 +1,1028 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estate</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reseter.css/2.0.0/reseter.min.css" integrity="sha512-gCJkkUMGTe73+FMwog6gIBCVJIMXRoc21l6/IPCuzxCex/1sxvO8ctb6Zd4/WWs2UMqmtnDrAdhJht5pEY0LXg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+        rel="stylesheet"
+        type="text/css"
+        href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+      />
+    <link rel="stylesheet" href="./public/css/main.css">
+    <link rel="stylesheet" href="./public/css/base.css">
+    <link rel="stylesheet" href="./public/css/grid.css">
+    <link rel="stylesheet" href="./public/css/responsive.css">
+    <link rel="stylesheet" href="./public/font/fontawesome/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <link rel="icon" href="./public/img/logo.png">
+</head>
+<body>
+    <!-- Header start -->
+    <header class="header">
+            <div class="grid wide">
+                <!-- Header navbar PC start -->
+                <div class="header__nav">
+                    <div class="header__logo">
+                        <a href="" class="header__logo-link">
+                            <img src="./public/img/logo.png" alt="" class="header__logo-img">
+                        </a>
+                    </div>
+                    <ul class="header__nav-list hide-on-mobile-tablet">
+                       <li class="header__nav-item header__nav-item--active" id="home">
+                        <a href="" class="header__nav-item-link">
+                            Home 
+                        </a>                   
+                        <i class="header__nav-item-icon fa-solid fa-sort-down"></i>
+                        <div class="header__nav-dropdown-menu">
+                            <a class="header__nav-dropdown-menu-item">Homepage 1</a>
+                            <a class="header__nav-dropdown-menu-item">Homepage 2</a>
+                            <a class="header__nav-dropdown-menu-item">Homepage 3</a>
+                            <a class="header__nav-dropdown-menu-item">Homepage 4</a> 
+                         </div>
+                       </li>
+        
+                       <li class="header__nav-item">
+                        <a href="" class="header__nav-item-link">Property</a>
+                        </li>
+                       <li class="header__nav-item">
+                        <a href="" class="header__nav-item-link">About</a>
+                        </li>
+                       <li class="header__nav-item" id="pages">
+                        <a href="" class="header__nav-item-link">Pages</a>
+                        <i class="header__nav-item-icon fa-solid fa-sort-down"></i>
+                        <div class="header__nav-dropdown-menu">
+                            <a class="header__nav-dropdown-menu-item">Agents</a>
+                            <a class="header__nav-dropdown-menu-item">Services</a>
+                            <a class="header__nav-dropdown-menu-item">Login</a>
+                            <a class="header__nav-dropdown-menu-item">Registration</a> 
+                            <a class="header__nav-dropdown-menu-item">404</a> 
+                         </div>
+                        </li>
+                       <li class="header__nav-item" id="gallery">
+                        <a href="" class="header__nav-item-link">Gallery</a>
+                        <i class="header__nav-item-icon fa-solid fa-sort-down"></i>
+                        <div class="header__nav-dropdown-menu">
+                            <a class="header__nav-dropdown-menu-item">Gallery Standard</a>
+                            <a class="header__nav-dropdown-menu-item">Gallery Alternative</a>
+                         </div>
+                        </li>
+                       <li class="header__nav-item">
+                        <a href="" class="header__nav-item-link">Blog</a>
+                       </li>
+                       <li class="header__nav-item">
+                        <a href="" class="header__nav-item-link">Contacts</a>
+                       </li> 
+                    </ul>
+                </div>
+                <!-- Header navbar PC End -->
+                <!-- Header navbar Mobile start -->
+                <label for="nav__mobile-input" class="nav__bar-btn">
+                    <i class="fa-solid fa-bars"></i>
+                </label>
+
+                <input type="checkbox" hidden class="nav__input" id="nav__mobile-input">
+
+                <label for="nav__mobile-input" class="nav__overplay"></label>
+
+                <nav class="nav__mobile">
+                    <label for="nav__mobile-input" class="nav__mobile-close">
+                        <i class="fa-solid fa-xmark"></i>
+                    </label>
+                    <ul class="nav__mobile-list">
+                        <li class="nav__mobile-item">
+                            <a href="#" class="nav__mobile-link" id="drop-home-btn">
+                                Home
+                                <i class="fa-solid fa-circle-plus nav__mobile-link-icon" id="drop-home-icon"></i>
+                            </a> 
+                            <div class="nav__mobile-dropdown-list" id="drop-home-list">
+                                <a href="#" class="nav__mobile-dropdown-item">Homepage 1</a>
+                                <a href="#" class="nav__mobile-dropdown-item">Homepage 2</a>
+                                <a href="#" class="nav__mobile-dropdown-item">Homepage 3</a>
+                                <a href="#" class="nav__mobile-dropdown-item">Homepage 4</a>
+                            </div>
+                        </li>
+                        <li class="nav__mobile-item">
+                            <a href="#" class="nav__mobile-link">
+                                Property
+                            </a> 
+                        </li>
+                        <li class="nav__mobile-item">
+                            <a href="#" class="nav__mobile-link">
+                                About
+                            </a>
+                        </li>
+                        <li class="nav__mobile-item">
+                            <a href="#" class="nav__mobile-link" id="drop-page-btn">
+                                Pages
+                                <i class="fa-solid fa-circle-plus nav__mobile-link-icon" id="drop-page-icon"></i>
+                            </a>
+                            <div class="nav__mobile-dropdown-list" id="drop-page-list">
+                                <a href="#" class="nav__mobile-dropdown-item">Agents</a>
+                                <a href="#" class="nav__mobile-dropdown-item">Services</a>
+                                <a href="#" class="nav__mobile-dropdown-item">Login</a>
+                                <a href="#" class="nav__mobile-dropdown-item">Registration</a>
+                                <a href="#" class="nav__mobile-dropdown-item">404</a>
+                            </div>
+                        </li>
+                        <li class="nav__mobile-item">
+                            <a href="#" class="nav__mobile-link">
+                                Agents
+                            </a>
+                        </li>
+                        <li class="nav__mobile-item">
+                            <a href="#" class="nav__mobile-link" id="drop-gal-btn">
+                                Gallery
+                                <i class="fa-solid fa-circle-plus nav__mobile-link-icon" id="drop-gal-icon"></i>
+                            </a>
+                            <div class="nav__mobile-dropdown-list" id="drop-gal-list">
+                                <a href="#" class="nav__mobile-dropdown-item">Gallery Standard</a>
+                                <a href="#" class="nav__mobile-dropdown-item">Gallery Alternative</a>
+                            </div>
+                        </li>
+                        <li class="nav__mobile-item">
+                            <a href="#" class="nav__mobile-link">
+                                Blogs
+                            </a>
+                        </li>
+                        <li class="nav__mobile-item">
+                            <a href="#" class="nav__mobile-link">
+                                Contacts
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <!-- Header navbar mobile End -->
+
+            </div>
+    </header>
+    <!-- Header end -->
+
+    <!-- Slider start -->
+    <div class="grid">
+        <div class="slider">
+            <div class="slider-1">
+                <h1 class="slider__title">
+                    Discover Your Home
+                </h1>
+                <p class="slider__content">
+                    Estate - Real Estate & Property Joomala Template of Poets Of Code
+                    <br>
+                    Helix Ultimate & SP Page Builder Pro.
+                </p>
+                <div class="slider__btn">
+                    <a href="#" class="slider__btn-link">Know More</a>
+                </div>
+            </div>
+            <div class="slider-2">
+                <h1 class="slider__title">
+                    Luxury Home
+                </h1>
+                <p class="slider__content">
+                    Estate - Real Estate & Property Joomala Template of Poets Of Code
+                    <br>
+                    Helix Ultimate & SP Page Builder Pro.
+                </p>
+                <div class="slider__btn">
+                    <a href="#" class="slider__btn-link">Know More</a>
+                </div>
+            </div>
+            <div class="slider-3">
+                <h1 class="slider__title">
+                    Your Dream Home
+                </h1>
+                <p class="slider__content">
+                    Estate - Real Estate & Property Joomala Template of Poets Of Code
+                    <br>
+                    Helix Ultimate & SP Page Builder Pro.
+                </p>
+                <div class="slider__btn">
+                    <a href="#" class="slider__btn-link">Know More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Slider end -->
+
+    <!-- Container start -->
+    <div class="container">
+        <!-- From input start -->
+        <form action="#" class="container-form__input">
+            <div class="grid wide">
+                <div class="row">
+                    <div class="col l-4 m-6 c-12">
+                        <p class="container-from__name">Search Here</p>
+                        <input type="text" name="searchtext" class="container-form__input-text" size="20" maxlength="20">
+                        <p class="container-from__name">Property</p>
+                        <select name="catid" class="container-form__select">
+                            <option class="container-form__select-item" value="" selected>All</option>
+                            <option class="container-form__select-item" value="">Cottage</option>
+                            <option class="container-form__select-item" value="">Villa</option>
+                            <option class="container-form__select-item" value="">Family House</option>
+                            <option class="container-form__select-item" value="">Townhouse</option>
+                            <option class="container-form__select-item" value="">Apartment</option>
+                        </select>
+                    </div>
+                    <div class="col l-3 m-6 c-12">
+                        <p class="container-from__name">Price</p>
+                        <input class="container-from__rage" type="range" min="0" max="750000">
+                        <p class="container-from__name">From</p>
+                        <input type="text" class="container-form__form">
+                        <p class="container-from__name">To</p>
+                        <input type="text" class="container-form__form">
+                    </div>
+                    <div class="col l-4 m-6 c-12">
+                        <p class="container-from__name">Listing</p>
+                        <select name="catid" class="container-form__select">
+                            <option class="container-form__select-item" value="" selected>All</option>
+                            <option class="container-form__select-item" value="">House For Request</option>
+                            <option class="container-form__select-item" value="">For Rent</option>
+                            <option class="container-form__select-item" value="">For Sale</option>
+                        </select>
+                        <p class="container-from__name">Listing Status</p>
+                        <select name="catid" class="container-form__select">
+                            <option class="container-form__select-item" value="" selected>All</option>
+                            <option class="container-form__select-item" value="">Active</option>
+                            <option class="container-form__select-item" value="">Offer</option>
+                            <option class="container-form__select-item" value="">Contract</option>
+                            <option class="container-form__select-item" value="">Closed</option>
+                            <option class="container-form__select-item" value="">Withdrawn/option>
+                        </select>
+                        <div class="container-form__btn">
+                            <input class="container-form__btn-search" type="submit" value="Search">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+        <!-- From input end -->
+
+        <!-- Newest Properties start -->
+        <div class="newest-properties">
+            <div class="grid wide">
+                <h3 class="newest-properties__title">Newest Properties</h3>
+                <div class="border-bottom__wrap">
+                    <div class="border-bottom__wrap-img"></div>
+                </div>
+                <div class="row">
+                    <!-- Item1 -->
+                    <div class="col l-4 m-6">
+                        <div class="newest-properties__item">
+                            <img src="./public/img/nw1.jpg" alt="" class="newest-properties-img">
+                            <div class="newest-properties__house">
+                                <a href="" class="newest-properties__name">Beaconsfield Estate</a>
+                                <p class="newest-properties__tag">
+                                    <i class="fa-solid fa-tag"></i>
+                                    Apartment
+                                </p>
+                                <p class="newest-properties__desc">
+                                    Taking transformation mapping and above all, create synergy. Funneling...
+                                </p>
+                                <div class="row">
+                                    <div class="col l-4">
+                                        <div class="newest-properties__feature">
+                                            <i class="fa-solid fa-bed"></i>
+                                            Bed: 3
+                                        </div>
+                                    </div>
+                                    <div class="col l-4">
+                                        <div class="newest-properties__feature">
+                                            <i class="fa-solid fa-shower"></i>
+                                            Bath: 4
+                                        </div>
+                                    </div>
+                                    <div class="col l-4">
+                                        <div class="newest-properties__feature">
+                                            <i class="fa fa-th"></i>
+                                            2400SF
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Item2 -->
+                    <div class="col l-4 m-6">
+                        <div class="newest-properties__item">
+                            <img src="./public/img/nw2.jpg" alt="" class="newest-properties-img">
+                            <div class="newest-properties__house">
+                                <a href="" class="newest-properties__name">Darlington, NYC Mansion</a>
+                                <p class="newest-properties__tag">
+                                    <i class="fa-solid fa-tag"></i>
+                                    Cottage
+                                </p>
+                                <p class="newest-properties__desc">
+                                    Taking transformation mapping and above all, create synergy. Funneling...
+                                </p>
+                                <div class="row">
+                                    <div class="col l-4">
+                                        <div class="newest-properties__feature">
+                                            <i class="fa-solid fa-bed"></i>
+                                            Bed: 2
+                                        </div>
+                                    </div>
+                                    <div class="col l-4">
+                                        <div class="newest-properties__feature">
+                                            <i class="fa-solid fa-shower"></i>
+                                            Bath: 3
+                                        </div>
+                                    </div>
+                                    <div class="col l-4">
+                                        <div class="newest-properties__feature">
+                                            <i class="fa fa-th"></i>
+                                            6600SF
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Item3 -->
+                    <div class="col l-4 m-6">
+                        <div class="newest-properties__item">
+                            <img src="./public/img/nw3.jpg" alt="" class="newest-properties-img">
+                            <div class="newest-properties__house">
+                                <a href="" class="newest-properties__name">Park Slope, Townhouse</a>
+                                <p class="newest-properties__tag">
+                                    <i class="fa-solid fa-tag"></i>
+                                    Townhouse
+                                </p>
+                                <p class="newest-properties__desc">
+                                    Taking transformation mapping and above all, create synergy. Funneling...
+                                </p>
+                                <div class="row">
+                                    <div class="col l-4">
+                                        <div class="newest-properties__feature">
+                                            <i class="fa-solid fa-bed"></i>
+                                            Bed: 4
+                                        </div>
+                                    </div>
+                                    <div class="col l-4">
+                                        <div class="newest-properties__feature">
+                                            <i class="fa-solid fa-shower"></i>
+                                            Bath: 6
+                                        </div>
+                                    </div>
+                                    <div class="col l-4">
+                                        <div class="newest-properties__feature">
+                                            <i class="fa fa-th"></i>
+                                            2750SF
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Newest Properties end -->
+
+        <!-- Contact start-->
+        <div class="contact">
+            <div class="gird">
+                <div class="row">
+                    <!-- Item1 -->
+                    <div class="col l-3 m-6">
+                        <div class="contact__item">
+                            <div class="contact__img">
+                                <img src="./public/img/1.png" alt="">
+                            </div>
+                            <h3 class="contact__name">live support!</h3>
+                            <p class="contact__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                                <br>
+                                Integer adipiscing erat eget risus.
+                            </p>
+                            <div class="contact__btn">
+                                <a href="#" class="">
+                                    Research Now
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Item2 -->
+                    <div class="col l-3 m-6">
+                        <div class="contact__item">
+                            <div class="contact__img">
+                                <img src="./public/img/2.png" alt="">
+                            </div>
+                            <h3 class="contact__name">search a home</h3>
+                            <p class="contact__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                                <br>
+                                Integer adipiscing erat eget risus.
+                            </p>
+                            <div class="contact__btn">
+                                <a href="#" class="">
+                                    Compare Now
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Item3 -->
+                    <div class="col l-3 m-6">
+                        <div class="contact__item">
+                            <div class="contact__img">
+                                <img src="./public/img/3.png" alt="">
+                            </div>
+                            <h3 class="contact__name">select by location</h3>
+                            <p class="contact__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                                <br>
+                                Integer adipiscing erat eget risus.
+                            </p>
+                            <div class="contact__btn">
+                                <a href="#" class="">
+                                    Learn More
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Item4 -->
+                    <div class="col l-3 m-6">
+                        <div class="contact__item">
+                            <div class="contact__img">
+                                <img src="./public/img/4.png" alt="">
+                            </div>
+                            <h3 class="contact__name">get the key</h3>
+                            <p class="contact__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                                <br>
+                                Integer adipiscing erat eget risus.
+                            </p>
+                            <div class="contact__btn">
+                                <a href="#" class="">
+                                    Explore More
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End -->
+
+        <!-- Popular Place -->
+        <div class="popular-place">
+            <div class="grid wide">
+                <h3 class="popular-place__title">popular place</h3>
+                <div class="border-bottom__wrap">
+                    <div class="border-bottom__wrap-img"></div>
+                </div>
+                <div class="row">
+                    <!-- Item1 -->
+                    <div class="col l-4 m-6">
+                        <div class="popular-place__item">
+                            <div class="popular-place__item-modal">
+                            </div>
+                            <div class="popular-place__img">
+                                <img src="./public/img/pp1.jpg" alt="" class="">
+                            </div>
+                            <a href="#" class="popular-place__btn">
+                                <i class="popular-place__btn-icon fa-solid fa-magnifying-glass"></i>
+                            </a>
+                            <a href="#" class="popular-place__haed">
+                                armored doors
+                            </a>
+                            <span class="popular-place__text">
+                                home
+                            </span>
+                        </div>
+                    </div>
+                    <!-- Item2 -->
+                    <div class="col l-4 m-6">
+                        <div class="popular-place__item">
+                            <div class="popular-place__item-modal">
+                            </div>
+                            <div class="popular-place__img">
+                                <img src="./public/img/pp2.jpg" alt="" class="">
+                            </div>
+                            <a href="#" class="popular-place__btn">
+                                <i class="popular-place__btn-icon fa-solid fa-magnifying-glass"></i>
+                            </a>
+                            <a href="#" class="popular-place__haed">
+                                medical center
+                            </a>
+                            <span class="popular-place__text">
+                                cottage
+                            </span>
+                        </div>
+                    </div>
+                    <!-- Item3 -->
+                    <div class="col l-4 m-6">
+                        <div class="popular-place__item">
+                            <div class="popular-place__item-modal">
+                            </div>
+                            <div class="popular-place__img">
+                                <img src="./public/img/pp3.jpg" alt="" class="">
+                            </div>
+                            <a href="#" class="popular-place__btn">
+                                <i class="popular-place__btn-icon fa-solid fa-magnifying-glass"></i>
+                            </a>
+                            <a href="#" class="popular-place__haed">
+                                light oriented
+                            </a>
+                            <span class="popular-place__text">
+                                home
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End -->
+
+        <!-- Video -->
+        <div class="container-video">
+            <div class="grid">
+                <h3 class="container-video__title">
+                    estate offers excellent 
+                    <br> 
+                    combination of location & quality
+                </h3>
+                <div class="border-bottom__wrap">
+                    <div class="border-bottom__wrap-img"></div>
+                </div>
+                <div class="container-video__btn">
+                    <div class="container-video__btn-wrap">
+                        <a href="" class="container-video__btn-center">
+                            <i class="container-video__btn-icon fa-solid fa-play"></i>
+                        </a>
+                    </div>
+                </div>
+                <p class="container-video__desc">take a full video tour</p>
+            </div>
+        </div>
+        <!-- End -->
+
+        <!-- Featured Properties -->
+        <div class="featured-properties">
+            <div class="grid wide">
+                <h3 class="featured-properties__title">
+                    featured properties
+                </h3>
+                <div class="border-bottom__wrap">
+                    <div class="border-bottom__wrap-img"></div>
+                </div>
+                <div class="row">
+                    <!-- Item1 -->
+                    <div class="col l-4 m-6">
+                        <div class="featured-properties__item">
+                            <img src="./public/img/fp1.jpg" alt="" class="featured-properties__img">
+                            <div class="featured-properties__item-wrap">
+                                <a href="" class="featured-properties__item-name">osowaw boulevard</a>
+                                <p class="featured-properties__item-desc">
+                                    Taking transformation mapping and above all, create synergy....
+                                </p>
+                                <div class="row">
+                                    <div class="col l-4">
+                                        <div class="featured-properties__utiliti">
+                                            <i class="fa-solid fa-bed"></i>
+                                            Bed: 4
+                                        </div>
+                                    </div>
+                                    <div class="col l-4">
+                                        <div class="featured-properties__utiliti">
+                                            <i class="fa-solid fa-shower"></i>
+                                            Bath: 8
+                                        </div>
+                                    </div>
+                                    <div class="col l-4">
+                                        <div class="featured-properties__utiliti">
+                                            <i class="fa fa-th"></i>
+                                            4000SF
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Item2 -->
+                    <div class="col l-4 m-6">
+                        <div class="featured-properties__item">
+                            <img src="./public/img/fp2.jpg" alt="" class="featured-properties__img">
+                            <div class="featured-properties__item-wrap">
+                                <a href="" class="featured-properties__item-name">centenial drive</a>
+                                <p class="featured-properties__item-desc">
+                                    Taking transformation mapping and above all, create synergy....
+                                </p>
+                                <div class="row">
+                                    <div class="col l-4">
+                                        <div class="featured-properties__utiliti">
+                                            <i class="fa-solid fa-bed"></i>
+                                            Bed: 5
+                                        </div>
+                                    </div>
+                                    <div class="col l-4">
+                                        <div class="featured-properties__utiliti">
+                                            <i class="fa-solid fa-shower"></i>
+                                            Bath: 4
+                                        </div>
+                                    </div>
+                                    <div class="col l-4">
+                                        <div class="featured-properties__utiliti">
+                                            <i class="fa fa-th"></i>
+                                            3750SF
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Item3 -->
+                    <div class="col l-4 m-6">
+                        <div class="featured-properties__item">
+                            <img src="./public/img/fp3.jpg" alt="" class="featured-properties__img">
+                            <div class="featured-properties__item-wrap">
+                                <a href="" class="featured-properties__item-name">park slope, townhouse</a>
+                                <p class="featured-properties__item-desc">
+                                    Taking transformation mapping and above all, create synergy....
+                                </p>
+                                <div class="row">
+                                    <div class="col l-4">
+                                        <div class="featured-properties__utiliti">
+                                            <i class="fa-solid fa-bed"></i>
+                                            Bed: 4
+                                        </div>
+                                    </div>
+                                    <div class="col l-4">
+                                        <div class="featured-properties__utiliti">
+                                            <i class="fa-solid fa-shower"></i>
+                                            Bath: 6
+                                        </div>
+                                    </div>
+                                    <div class="col l-4">
+                                        <div class="featured-properties__utiliti">
+                                            <i class="fa fa-th"></i>
+                                            2750SF
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Item4 -->
+                    <div class="col l-4 m-6">
+                        <div class="featured-properties__item">
+                            <img src="./public/img/fp4.jpg" alt="" class="featured-properties__img">
+                            <div class="featured-properties__item-wrap">
+                                <a href="" class="featured-properties__item-name">green gables - the estate</a>
+                                <p class="featured-properties__item-desc">
+                                    Taking transformation mapping and above all, create synergy....
+                                </p>
+                                <div class="row">
+                                    <div class="col l-4">
+                                        <div class="featured-properties__utiliti">
+                                            <i class="fa-solid fa-bed"></i>
+                                            Bed: 2
+                                        </div>
+                                    </div>
+                                    <div class="col l-4">
+                                        <div class="featured-properties__utiliti">
+                                            <i class="fa-solid fa-shower"></i>
+                                            Bath: 2
+                                        </div>
+                                    </div>
+                                    <div class="col l-4">
+                                        <div class="featured-properties__utiliti">
+                                            <i class="fa fa-th"></i>
+                                            360SF
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Item5 -->
+                    <div class="col l-4 m-6">
+                        <div class="featured-properties__item">
+                            <img src="./public/img/fp5.jpg" alt="" class="featured-properties__img">
+                            <div class="featured-properties__item-wrap">
+                                <a href="" class="featured-properties__item-name">darlington, NYC Mansion</a>
+                                <p class="featured-properties__item-desc">
+                                    Taking transformation mapping and above all, create synergy....
+                                </p>
+                                <div class="row">
+                                    <div class="col l-4">
+                                        <div class="featured-properties__utiliti">
+                                            <i class="fa-solid fa-bed"></i>
+                                            Bed: 2
+                                        </div>
+                                    </div>
+                                    <div class="col l-4">
+                                        <div class="featured-properties__utiliti">
+                                            <i class="fa-solid fa-shower"></i>
+                                            Bath: 3
+                                        </div>
+                                    </div>
+                                    <div class="col l-4">
+                                        <div class="featured-properties__utiliti">
+                                            <i class="fa fa-th"></i>
+                                            6600SF
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Item6 -->
+                    <div class="col l-4 m-6">
+                        <div class="featured-properties__item">
+                            <img src="./public/img/fp6.jpg" alt="" class="featured-properties__img">
+                            <div class="featured-properties__item-wrap">
+                                <a href="" class="featured-properties__item-name">beaconsfield estate</a>
+                                <p class="featured-properties__item-desc">
+                                    Taking transformation mapping and above all, create synergy....
+                                </p>
+                                <div class="row">
+                                    <div class="col l-4">
+                                        <div class="featured-properties__utiliti">
+                                            <i class="fa-solid fa-bed"></i>
+                                            Bed: 3
+                                        </div>
+                                    </div>
+                                    <div class="col l-4">
+                                        <div class="featured-properties__utiliti">
+                                            <i class="fa-solid fa-shower"></i>
+                                            Bath: 4
+                                        </div>
+                                    </div>
+                                    <div class="col l-4">
+                                        <div class="featured-properties__utiliti">
+                                            <i class="fa fa-th"></i>
+                                            2400SF
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!-- End -->
+
+        <!-- Container Description -->
+        <div class="container-description">
+            <div class="grid wide">
+                <div class="row">
+                    <div class="col l-10">
+                        <h3 class="container-description__title">For more information about real solutions details.</h3>
+                    </div>
+                    <div class="col l-2">
+                        <a href="#" class="container-description__btn">know more</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End -->
+
+        <!-- Latest Post -->
+        <div class="latest-post">
+            <div class="grid wide">
+                <h3 class="latest-post__title">latest post</h3>
+                <div class="border-bottom__wrap">
+                    <div class="border-bottom__wrap-img"></div>
+                </div>
+                <div class="row">
+                    <!-- Item1 -->
+                    <div class="col l-4 m-4">
+                        <div class="latest-post__item">
+                            <img src="./public/img/lp1.jpg" alt="" class="featured-properties__img">
+                            <div class="latest-post__item-wrap">
+                                <a href="" class="latest-post__item-name">How to Prosper in Real Estate</a>
+                                <div class="latest-post__item-date">
+                                    <span>21 February 2021</span>
+                                    <span>Estate Agent</span>
+                                </div>
+                                <p class="featured-properties__item-desc">
+                                    It won’t be a bigger problem to find one video game lover in your neighbor. Since the introduct
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Item2 -->
+                    <div class="col l-4 m-4">
+                        <div class="latest-post__item">
+                            <img src="./public/img/lp2.jpg" alt="" class="featured-properties__img">
+                            <div class="latest-post__item-wrap">
+                                <a href="" class="latest-post__item-name">How to Prosper in Real Estate</a>
+                                <div class="latest-post__item-date">
+                                    <span>21 February 2021</span>
+                                    <span>Estate Agent</span>
+                                </div>
+                                <p class="featured-properties__item-desc">
+                                    It won’t be a bigger problem to find one video game lover in your neighbor. Since the introduct
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Item3 -->
+                    <div class="col l-4 m-4">
+                        <div class="latest-post__item">
+                            <img src="./public/img/lp3.jpg" alt="" class="featured-properties__img">
+                            <div class="latest-post__item-wrap">
+                                <a href="" class="latest-post__item-name">How to Prosper in Real Estate</a>
+                                <div class="latest-post__item-date">
+                                    <span>21 February 2021</span>
+                                    <span>Estate Agent</span>
+                                </div>
+                                <p class="featured-properties__item-desc">
+                                    It won’t be a bigger problem to find one video game lover in your neighbor. Since the introduct
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid wide">
+                <div class="image-slider">
+                    <div class="image-item">
+                        <div class="image">
+                            <img src="./public/img/l1.png" class="image-img" alt="">
+                        </div>
+                    </div>
+
+                    <div class="image-item">
+                        <div class="image">
+                            <img src="./public/img/l2.png" class="image-img" alt="">
+                        </div>
+                    </div>
+
+                    <div class="image-item">
+                        <div class="image">
+                            <img src="./public/img/l3.png" class="image-img" alt="">
+                        </div>
+                    </div>
+
+                    <div class="image-item">
+                        <div class="image">
+                            <img src="./public/img/l4.png" class="image-img" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        <!-- End -->
+    </div>
+    <!-- Container end -->
+    <footer class="footer">
+        <div class="footer-btn">
+            <a href="#" aria-label="Scroll Up" class="footer-btn__link">
+                <i class="fa-solid fa-chevron-up"></i>
+            </a>
+        </div>
+        <div class="grid wide">
+            <div class="row">
+                <!-- Item1 -->
+                <div class="col l-3 m-12 c-12">
+                    <img src="./public/img/logo.png" alt="" class="footer__logo">
+                    <div class="footer__desc">
+                        <span>
+                            <b>Estate</b> is a Real Estate / Property joomla Template built with Helix Ultimate & SP Page Builder Pro.
+                        </span>
+                    </div>
+                    <div class="footer__social">
+                        <p>
+                            <i class="fas fa-map-signs">&nbsp;</i>
+                            23 Green Street, Melbourne
+                        </p>
+                        <p>
+                            <i class="fas fa-at">&nbsp;</i>
+                            Estate@example.com
+                        </p>
+                    </div>
+                </div>
+                <!-- Item2 -->
+                <div class="col l-4 m-6 c-12">
+                    <h4 class="footer__title">Latest Post</h4>
+                    <ul class="footer__list">
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">
+                                How to Prosper in Real Estate			
+                            </a>
+                            <span>21 February 2021</span>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">
+                                Modern Society, Best Investment						
+                            </a>
+                            <span>21 February 2021</span>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">  
+                                Luxury Home $15000 Lifetime			
+                            </a>
+                            <span>21 February 2021</span>
+                        </li>
+                    </ul>
+                </div>
+                <!-- Item3 -->
+                <div class="col l-2 m-6 c-12">
+                    <h4 class="footer__title">Latest Post</h4>
+                    <ul class="footer__list">
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">
+                                <i class="fa-solid fa-caret-right"></i>
+                                Home Loan	
+                            </a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">
+                                <i class="fa-solid fa-caret-right"></i>
+                                Builders Perth
+                            </a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">  
+                                <i class="fa-solid fa-caret-right"></i>
+                                Real Estate Agents	
+                            </a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">  
+                                <i class="fa-solid fa-caret-right"></i>
+                                Contact Support
+                            </a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">  
+                                <i class="fa-solid fa-caret-right"></i>
+                                Financial Support
+                            </a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">  
+                                <i class="fa-solid fa-caret-right"></i>
+                                Terms of Use
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- Item4 -->
+                <div class="col l-3 m-12 c-12">
+                    <h4 class="footer__title">Photo Gallery</h4>
+                    <div class="row">
+                        <div class="col l-4">
+                            <div class="footer__photo-gallery">
+                                <img src="./public/img/ft1.jpg" alt="" class="">
+                            </div>
+                        </div>
+                        <div class="col l-4">
+                            <div class="footer__photo-gallery">
+                                <img src="./public/img/ft2.jpg" alt="" class="">
+                            </div>
+                        </div>
+                        <div class="col l-4">
+                            <div class="footer__photo-gallery">
+                                <img src="./public/img/ft3.jpg" alt="" class="">
+                            </div>
+                        </div>
+                        <div class="col l-4">
+                            <div class="footer__photo-gallery">
+                                <img src="./public/img/ft4.jpg" alt="" class="">
+                            </div>
+                        </div>
+                        <div class="col l-4">
+                            <div class="footer__photo-gallery">
+                                <img src="./public/img/ft5.jpg" alt="" class="">
+                            </div>
+                        </div>
+                        <div class="col l-4">
+                            <div class="footer__photo-gallery">
+                                <img src="./public/img/ft6.jpg" alt="" class="">
+                            </div>
+                        </div>
+                    
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer__author">
+            <div class="grid wide">
+                <span>©2022 Estate. All Rights Reserved. Designed By</span>
+                <em class="fa fa-heart">&nbsp; </em>
+                <a href="https://poetsofcode.com/" target="_self">Poets of Code</a>
+                <span>Clone by Duong</span>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Javacsript -->
+        <script
+        src="https://code.jquery.com/jquery-1.11.0.min.js"
+        ></script>
+        <script
+        src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"
+        ></script>
+        <script
+        src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+        ></script>
+
+    <script src="./public/js/app.js"></script>
+</body>
+</html>
